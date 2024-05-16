@@ -117,8 +117,8 @@ body {
 }
 .truyen_container{
    display: flex;
-   margin-left: 200px;
-   margin-right: 200px;
+   width: 80%;
+   margin: auto;
    justify-content:space-between;
 }
 .left {
@@ -188,12 +188,14 @@ body {
     margin-left: -40px;
     
 }
-
+.categories li{
+    text-align: left;
+}
 .categories li a {
     text-decoration: none;
     color: #504b4b;
     line-height: 30px;
-    
+
 }
 
 .categories li a:hover {
@@ -242,8 +244,9 @@ body {
     line-height: 33px;
     color: #847676;
     font-weight: bold;
-    padding-left: 50px;
     background: url(../images/layout/bar_bg.gif) no-repeat center;
+    background-color: #7d1317;
+    text-align: left;
 }
 
 .center_content {
@@ -256,7 +259,6 @@ body {
 .cuon{
     background-color:white;
     width: 80%;
-    margin-bottom: 30px;
     margin: auto;
 }
 .center_cuon {
