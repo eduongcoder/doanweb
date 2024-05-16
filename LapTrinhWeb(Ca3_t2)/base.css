@@ -1,0 +1,139 @@
+body{
+    text-align: center;
+}
+html{
+    font-size: 100%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+:root{
+
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --primary-color:#EE4D2D;
+    --border-color:#dbdbdb;
+
+    --header-height:220px;
+    --navbar-height:34px;
+    --header-with-search-height:calc(var(--header-height)-var(var(--navbar-height)));
+}
+.grid__colmn-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+.grid__colmn-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3333%;
+}
+.grid{
+    width: 1200;
+    max-width: 100%;
+    margin: 0;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+@keyframes ideIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes heatify {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
+
+/* #cn_hien--login{
+    position: fixed;
+    top :0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    animation: ideIn linear 0.1s ;
+} */
+.madal{
+    position: fixed;
+    top :0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    animation: ideIn linear 0.1s ;
+}
+.madal__overplay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.3);
+    z-index: 2;
+}
+.madal__body{
+    /* --growth-from: 0.7;
+    --growth-to:1; */
+    background-color: var(--white-color);
+    border: 5px;
+    margin: auto    ;
+    position: relative;
+    z-index: 3;
+    animation:  growth linear 0.1s   ;
+}
+.btn{
+    min-width: 142px;
+    height: 24px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 0 12px;
+    cursor: pointer;
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+    justify-content: center;
+}
+.btn.btn--nomal:hover{
+    background-color: rgb(0, 0, 0,0.05);
+}
+.btn.btn--size-s{
+    height: 32px;
+    font-size: 12px;
+    padding: 0 4px;
+}
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+
+}
+.btn.btn--disaled{
+    cursor: default;
+    /* filter: brightness(80%); */
+    background-color: #999;
+}

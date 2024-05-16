@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="stype.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.js">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>truyen</title>
+</head>
+<body>
+    <div class="story">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link">trang chủ</a></li>
+                        <li class="header__navbar-item header__navbar-item--has-notiy">
+                         <a href="" class="header__navbar-item-link"><i class="header__navbar-icon fa-solid fa-bars"></i>thể loại</a>
+                         <div class="header__notify">
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">lãng mạng</a><a href="" class="header__notify-link">vui</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">kiếm hiệp</a><a href="" class="header__notify-link">buồn</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">chuyển sinh</a><a href="" class="header__notify-link">hai kịch</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">khoa học</a><a href="" class="header__notify-link">bị kich</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">giả tưởng</a><a href="" class="header__notify-link">what</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">phieu lưu</a><a href="" class="header__notify-link">wy</a></li>
+                            </ul>
+                         </div>
+                         </li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link"><i class="header__navbar-icon fa-solid fa-file"></i></i>lịch sử</a></li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link"><i class="header__navbar-icon fa-solid fa-gears"></i>danh sách truyện</a></li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link">tìm kiếm nâng cao</a></li>
+                    </ul>
+                    <div class="header__navbar-search">
+                        <div class="header__search">
+                            <input type="text" class="header__navbar-search-input" placeholder="nhập tên truyện cần tiềm">
+                            <button class="header__search-btn">
+                                <i class=" header__search-btn--icon fa-sharp fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <div class="header__navbar-item-link" onclick="hien()">đăng nhập</div></li>
+                        <li class="header__navbar-item ">
+                            <div class="header__navbar-item-link" onclick="hien()"></div>đăng ký</div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="cuon">
+            <div class="center_cuon">
+                <div class="product_box">
+                    <div class="pro_box_top"></div>
+                    <div class="pro_box_mid">
+                        <div class="pro_title">naruto</div>
+                        <div class="pro_img"><a href="#"><img src="img/Naruto_01_m.jpg" /></a></div>
+                        <div class="price2" >tập 120</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" />xem</a></div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div class="pro_box_bot"></div>
+                </div>
+                <div class="product_box">
+                    <div class="pro_box_top"></div>
+                    <div class="pro_box_mid">
+                        <div class="pro_title">mùa hè làng quê</div>
+                        <div class="pro_img"><a href="#"><img src="img/MV5BZjhmYmVmYzEtMzUzZi00ZjUbloodc.jpg" /></a></div>
+                        <div class="price2" >tập 50</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" />xem</a></div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div class="pro_box_bot"></div>
+                </div>
+                <div class="product_box">
+                    <div class="pro_box_top"></div>
+                    <div class="pro_box_mid">
+                        <div class="pro_title"><a href="#">hakako</a></div>
+                        <div class="pro_img"><a href="#"><img src="img/truyen2.jpg" /></a></div>
+                        <div class="price2" >tập 150</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                        <div style="clear:both"></div>                
+                    </div>
+                    <div class="pro_box_bot"></div>
+                </div>
+                <div class="product_box">
+                    <div class="pro_box_top"></div>
+                    <div class="pro_box_mid">
+                        <div class="pro_title"><a href="#">hakako</a></div>
+                        <div class="pro_img"><a href="#"><img src="img/truyen2.jpg" /></a></div>
+                        <div class="price2" >tập 150</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                        <div style="clear:both"></div>                
+                    </div>
+                    <div class="pro_box_bot"></div>
+                </div>
+                <div class="product_box">
+                    <div class="pro_box_top"></div>
+                    <div class="pro_box_mid">
+                        <div class="pro_title"><a href="#">hakako</a></div>
+                        <div class="pro_img"><a href="#"><img src="img/truyen2.jpg" /></a></div>
+                        <div class="price2" >tập 150</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                        <div style="clear:both"></div>                
+                    </div>
+                    <div class="pro_box_bot"></div>
+                </div>
+                <div class="product_box">
+                    <div class="pro_box_top"></div>
+                    <div class="pro_box_mid">
+                        <div class="pro_title"><a href="#">hakako</a></div>
+                        <div class="pro_img"><a href="#"><img src="img/truyen2.jpg" /></a></div>
+                        <div class="price2" >tập 150</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                        <div style="clear:both"></div>                
+                    </div>
+                    <div class="pro_box_bot"></div>
+                </div>
+                 <div class="product_box">
+                    <div class="pro_box_top"></div>
+                    <div class="pro_box_mid">
+                        <div class="pro_title"><a href="#">hakako</a></div>
+                        <div class="pro_img"><a href="#"><img src="img/truyen2.jpg" /></a></div>
+                        <div class="price2" >tập 150</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                        <div style="clear:both"></div>                
+                    </div>
+                    <div class="pro_box_bot"></div>
+                </div>
+                <div class="product_box">
+                    <div class="pro_box_top"></div>
+                    <div class="pro_box_mid">
+                        <div class="pro_title"><a href="#">hakako</a></div>
+                        <div class="pro_img"><a href="#"><img src="img/truyen2.jpg" /></a></div>
+                        <div class="price2" >tập 150</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                        <div style="clear:both"></div>                
+                    </div>
+                    <div class="pro_box_bot"></div>
+                </div>
+                <div class="product_box">
+                    <div class="pro_box_top"></div>
+                    <div class="pro_box_mid">
+                        <div class="pro_title"><a href="#">hakako</a></div>
+                        <div class="pro_img"><a href="#"><img src="img/truyen2.jpg" /></a></div>
+                        <div class="price2" >tập 150</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                        <div style="clear:both"></div>                
+                    </div>
+                    <div class="pro_box_bot"></div>
+                </div>
+                <div class="product_box">
+                    <div class="pro_box_top"></div>
+                    <div class="pro_box_mid">
+                        <div class="pro_title"><a href="#">hakako</a></div>
+                        <div class="pro_img"><a href="#"><img src="img/truyen2.jpg" /></a></div>
+                        <div class="price2" >tập 150</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                        <div style="clear:both"></div>                
+                    </div>
+                    <div class="pro_box_bot"></div>
+                </div>
+                <div class="product_box">
+                    <div class="pro_box_top"></div>
+                    <div class="pro_box_mid">
+                        <div class="pro_title"><a href="#">vua hải tặc</a></div>
+                        <div class="pro_img"><a href="#"><img src="img/onepi.jpg" /></a></div>
+                        <div class="price2" >tập 1500</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" />xem</a></div>
+                        <div style="clear:both"></div>                
+                     </div>
+                    <div class="pro_box_bot"></div>
+                </div>
+                 </div>
+        </div>
+        <div class="truyen_container">
+            <div class="left">
+                <!-- <div class="left_content">
+                    <div class="title1">
+                        <a  href="#"><button style="background-color: rgb(53, 58, 58);"><i class="fa-solid fa-bars"></i></button>Thể loại</a>
+                    </div>
+                    <ul class="categories">
+                        <li class="lmenu1" >
+                            <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon"> <i class="fa-solid fa-font-awesome"></i></i>tiên hiệp</a> 
+                            <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon"> <i class="fa-solid fa-biohazard"></i>huyền huyễn</a> 
+                        </li>
+                        <li class="lmenu1" >
+                            <a href=""><i class="fa-solid fa-cannabis"></i>&nbsp;&nbsp;đô thị</a> <a href=""><i class="fa-solid fa-biohazard"></i>  &nbsp;&nbsp;khoa huyễn</a>
+                        </li>
+                        <li class="lmenu1" >
+                            <a href=""> <i class="fa-solid fa-font-awesome"></i></i>&nbsp;&nbsp;kỳ huyễn</a> <a href=""><i class="fa-solid fa-cannabis"></i>  &nbsp;&nbsp;võ hiệp</a>
+                        </li>
+                        <li class="lmenu1" >
+                            <a href=""> <i class="fa-solid fa-staff-snake"></i> &nbsp;&nbsp;lịch sử</a> <a href=""><i class="fa-solid fa-circle-radiation"></i>  &nbsp;&nbsp;đồng nhân</a>
+                        </li>
+                        <li class="lmenu1" >
+                            <a href=""><i class="fa-solid fa-heart-pulse"></i>  &nbsp;&nbsp;quân sự</a> <a href=""> <i class="fa-solid fa-heart"></i> &nbsp;&nbsp;du hi</a>
+                        </li>
+                        <li class="lmenu1" >
+                            <a href=""> <i class="fa-solid fa-staff-snake"></i> &nbsp;&nbsp;cảnh kỹ</a> <a href=""> <i class="fa-solid fa-heart-pulse"></i> &nbsp;&nbsp;linh di</a>
+                        </li>
+                        <li class="lmenu1" >
+                            <a href=""> <i class="fa-solid fa-circle-radiation"></i> &nbsp;&nbsp;ngôn tình</a> <a href=""> <i class="fa-solid fa-heart"></i> &nbsp;&nbsp;tất cả</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <div class="content">
+                    <div class="center_title">truyện mới cập nhật</div>
+                    <div class="center_content">
+                        <div class="product_box">
+                            <div class="pro_box_top"></div>
+                            <div class="pro_box_mid">
+                                <div class="pro_title">naruto</div>
+                                <div class="pro_img"><a href="#"><img src="img/Naruto_01_m.jpg" /></a></div>
+                                <div class="price2" >tập 120</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" />xem</a></div>
+                                <div style="clear:both"></div>
+                            </div>
+                            <div class="pro_box_bot"></div>
+                        </div>
+                        <div class="product_box">
+                            <div class="pro_box_top"></div>
+                            <div class="pro_box_mid">
+                                <div class="pro_title">mùa hè làng quê</div>
+                                <div class="pro_img"><a href="#"><img src="img/MV5BZjhmYmVmYzEtMzUzZi00ZjUbloodc.jpg" /></a></div>
+                                <div class="price2" >tập 50</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" />xem</a></div>
+                                <div style="clear:both"></div>
+                            </div>
+                            <div class="pro_box_bot"></div>
+                        </div>
+                        <div class="product_box">
+                            <div class="pro_box_top"></div>
+                            <div class="pro_box_mid">
+                                <div class="pro_title"><a href="#">hakako</a></div>
+                                <div class="pro_img"><a href="#"><img src="img/truyen2.jpg" /></a></div>
+                                <div class="price2" >tập 150</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                                <div style="clear:both"></div>                
+                            </div>
+                            <div class="pro_box_bot"></div>
+                        </div>
+                        
+                        <div class="product_box">
+                            <div class="pro_box_top"></div>
+                            <div class="pro_box_mid">
+                                <div class="pro_title"><a href="#">vua hải tặc</a></div>
+                                <div class="pro_img"><a href="#"><img src="img/onepi.jpg" /></a></div>
+                                <div class="price2" >tập 1500</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" />xem</a></div>
+                                <div style="clear:both"></div>                
+                             </div>
+                            <div class="pro_box_bot"></div>
+                        </div>
+                         </div>
+                
+                  <div style="clear:both"></div>
+                
+                  <div class="center_content">
+                    <div class="product_box">
+                        <div class="pro_box_top"></div>
+                        <div class="pro_box_mid">
+                            <div class="pro_title"><a href="#">Sơn goal</a></div>
+                            <div class="pro_img"><a href="#"><img src="img/son_goal_2.jpg.webp" /></a></div>
+                            <div class="price2"  >tập 500</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="pro_box_bot"></div>
+                    </div>
+                    <div class="product_box">
+                        <div class="pro_box_top"></div>
+                        <div class="pro_box_mid">
+                            <div class="pro_title"><a href="#">demon slayer</a></div>
+                            <div class="pro_img"><a href="#"><img src="images/Sach_3.jpg" /></a></div>
+                            <div class="price2"  >tập 310</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" />xem</a></div>
+                            <div style="clear:both"></div>                
+                        </div>
+                        <div class="pro_box_bot"></div>
+                    </div>
+                    
+                    <div class="product_box">
+                        <div class="pro_box_top"></div>
+                        <div class="pro_box_mid">
+                            <div class="pro_title"><a href="#">đại ciến thầy cúng</a></div>
+                            <div class="pro_img"><a href="#"><img src="img/jjkai.jpg" /></a></div>
+                            <div class="price2" >tập 378</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                            <div style="clear:both"></div>                
+                         </div>
+                        <div class="pro_box_bot"></div>
+                    </div>
+                    <div class="product_box">
+                        <div class="pro_box_top"></div>
+                        <div class="pro_box_mid">
+                            <div class="pro_title"><a href="#">lớp học tìn thương</a></div>
+                            <div class="pro_img"><a href="#"><img src="img/koro_sensei.jpg" /></a></div>
+                            <div class="price2" >tập 365</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                            <div style="clear:both"></div>                
+                         </div>
+                        <div class="pro_box_bot"></div>
+                    </div>
+                   </div>  
+                   <div class="center_content">
+                    <div class="product_box">
+                        <div class="pro_box_top"></div>
+                        <div class="pro_box_mid">
+                            <div class="pro_title"><a href="#">Sơn goal</a></div>
+                            <div class="pro_img"><a href="#"><img src="img/son_goal_2.jpg.webp" /></a></div>
+                            <div class="price2"  >tập 500</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="pro_box_bot"></div>
+                    </div>
+                    <div class="product_box">
+                        <div class="pro_box_top"></div>
+                        <div class="pro_box_mid">
+                            <div class="pro_title"><a href="#">demon slayer</a></div>
+                            <div class="pro_img"><a href="#"><img src="images/Sach_3.jpg" /></a></div>
+                            <div class="price2"  >tập 310</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" />xem</a></div>
+                            <div style="clear:both"></div>                
+                        </div>
+                        <div class="pro_box_bot"></div>
+                    </div>
+                    
+                    <div class="product_box">
+                        <div class="pro_box_top"></div>
+                        <div class="pro_box_mid">
+                            <div class="pro_title"><a href="#">đại ciến thầy cúng</a></div>
+                            <div class="pro_img"><a href="#"><img src="img/jjkai.jpg" /></a></div>
+                            <div class="price2" >tập 378</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                            <div style="clear:both"></div>                
+                         </div>
+                        <div class="pro_box_bot"></div>
+                    </div>
+                    <div class="product_box">
+                        <div class="pro_box_top"></div>
+                        <div class="pro_box_mid">
+                            <div class="pro_title"><a href="#">lớp học tìn thương</a></div>
+                            <div class="pro_img"><a href="#"><img src="img/koro_sensei.jpg" /></a></div>
+                            <div class="price2" >tập 365</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                            <div style="clear:both"></div>                
+                         </div>
+                        <div class="pro_box_bot"></div>
+                    </div>
+                   </div>  
+                   <div class="center_content">
+                    <div class="product_box">
+                        <div class="pro_box_top"></div>
+                        <div class="pro_box_mid">
+                            <div class="pro_title"><a href="#">Sơn goal</a></div>
+                            <div class="pro_img"><a href="#"><img src="img/son_goal_2.jpg.webp" /></a></div>
+                            <div class="price2"  >tập 500</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="pro_box_bot"></div>
+                    </div>
+                    <div class="product_box">
+                        <div class="pro_box_top"></div>
+                        <div class="pro_box_mid">
+                            <div class="pro_title"><a href="#">demon slayer</a></div>
+                            <div class="pro_img"><a href="#"><img src="images/Sach_3.jpg" /></a></div>
+                            <div class="price2"  >tập 310</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" />xem</a></div>
+                            <div style="clear:both"></div>                
+                        </div>
+                        <div class="pro_box_bot"></div>
+                    </div>
+                    
+                    <div class="product_box">
+                        <div class="pro_box_top"></div>
+                        <div class="pro_box_mid">
+                            <div class="pro_title"><a href="#">đại ciến thầy cúng</a></div>
+                            <div class="pro_img"><a href="#"><img src="img/jjkai.jpg" /></a></div>
+                            <div class="price2" >tập 378</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                            <div style="clear:both"></div>                
+                         </div>
+                        <div class="pro_box_bot"></div>
+                    </div>
+                    <div class="product_box">
+                        <div class="pro_box_top"></div>
+                        <div class="pro_box_mid">
+                            <div class="pro_title"><a href="#">lớp học tìn thương</a></div>
+                            <div class="pro_img"><a href="#"><img src="img/koro_sensei.jpg" /></a></div>
+                            <div class="price2" >tập 365</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
+                            <div style="clear:both"></div>                
+                         </div>
+                        <div class="pro_box_bot"></div>
+                    </div>
+                   </div>  
+            
+                </div>
+                   MENU bên phải  
+                 <div class="right">
+                    <div class="right_content">
+                        <div class="title">Tin Tức</div>
+                        <ul class="categories">
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i> &nbsp;&nbsp;Đăng kí convert</a>
+                            </li>
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i> &nbsp;&nbsp;Bảng lương convert</a>
+                            </li>
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i>  &nbsp;&nbsp;Kiếm tiền với tàng thư viện</a>
+                            </li>
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i> &nbsp;&nbsp;các đơn vị tiền tệ</a>
+                            </li>
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i> &nbsp;&nbsp;các bước để trở thành converter </a>
+                            </li>
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i>&nbsp;&nbsp;TTV translate- ứng dụng convert truyện tren moble</a>
+                            </li>
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i>  &nbsp;&nbsp;thu vien hỡ trợ miễn phí co convert</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <div class="title">Quảng cáo</div>
+                        <div class="box_content">
+                            <iframe width="240px" height="290px" src="https://www.youtube.com/embed/CFjI21M9wZs" title="アニメ『怪獣８号』ノンクレジットOP｜YUNGBLUD「Abyss」｜毎週土曜23時～放送・配信" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="title">những bộ chuyện đang hot</div>
+                        <div class="box_content" style="height:500px;">
+                            <marquee direction="up" height="500px">
+                                <div class="pro_title">blood c (Tái Bản 2018) </div>
+                                <div style="text-align:center"><img src="img/MV5BZjhmYmVmYzEtMzUzZi00ZjUbloodc.jpg" height="120" /></div>
+                                <div class="pro_price">tập 89</div>
+                                <div style="clear:both"></div>
+                                <hr color="#6da6b1" />
+                                <div class="pro_title"> Cô nam (Tái Bản 2019) </div>
+                                <div style="text-align:center"><img src="img/top-nhung-vu-an-co-dong-co-xam-xi-nhat-tham-tu-lung-danh-conan-phan-2-thumb.jpg" height="120" /></div>
+                                <div class="pro_price">movie 15</div>
+                                <div style="clear:both"></div>
+                            </marquee>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div id="path"></div>
+        <div class="footer">
+            Copyright&copy;web sách <br /> Địa chỉ: 180 Cao Lỗ Phường 4 Quận 8 Tp.HCM<br />
+
+        </div>
+        <!-- <div  class="madal">
+            register form
+                <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="nhập email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="nhập mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="nhập khẩu mật khẩu của bạn">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                bạn đăng ký ,đồng ý với yêu cầu của web.
+                                <a href="" class="auth-form__text-link">điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">chính sách bảo mật</a>
+                                
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls-back btn--nomal">trở lại</button>
+                            <button class="btn btn--primary" >đăng ký</button>
+                        </div>
+                    </div>
+                
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon"><i class="auth-form__socials-icon fa-brands fa-facebook"></i><span class="auth-form__social-title">kết nối với facebook</span></a>
+                        <a href="" class="auth-form__socials--gg btn btn--size-s btn--with-icon"><i class="auth-form__socials-icon fa-brands fa-google"></i><span class="auth-form__social-title">kết nối với google</span></a>
+                    </div>
+                </div>
+        </div> -->
+        <!-- login form -->
+        <div class="madal" id="cmm">
+            <div class="madal__overplay">
+
+            </div>
+            <div class="madal__body">
+                
+                <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng ký</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="nhập email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="nhập mật khẩu của bạn">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__hhelp-link auth-form__hhelp-fogot"> quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__hhelp-link">cần trợ giúp</a>
+                            </div>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls-back btn--nomal">trở lại</button>
+                            <button class="btn btn--primary">đăng nhập</button>
+                        </div>
+                    </div>
+                 
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon"><i class="auth-form__socials-icon fa-brands fa-facebook"></i><span class="auth-form__social-title">đăng nhập facebook</span></a>
+                        <a href="" class="auth-form__socials--gg btn btn--size-s btn--with-icon"><i class="auth-form__socials-icon fa-brands fa-google"></i><span class="auth-form__social-title">đăng nhập google</span></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="madal_inner"></div>
+        </div>
+    </div>
+</body>
+</html>
