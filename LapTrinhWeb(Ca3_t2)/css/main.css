@@ -139,6 +139,15 @@ body {
 .right {
    
 }
+.chon_theloai{
+    display: flex;
+}
+.list_theloai{
+    list-style-type: none;
+}
+.theloai-li{
+    text-align: left;
+}
 
 #cart {
     margin-top: 10px;
@@ -206,7 +215,7 @@ body {
     text-align: center;
     color: #FFF;
     font-weight: bold;
-    background-color: #504b4b;
+    background-color: #0bb1a7;
     margin-top: 10px;
 }
 .title1 {

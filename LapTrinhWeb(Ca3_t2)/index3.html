@@ -16,7 +16,177 @@
 </head>
 <body>
     <div class="story">
-        
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link">trang chủ</a></li>
+                        <li class="header__navbar-item header__navbar-item--has-notiy">
+                         <a href="" class="header__navbar-item-link"><i class="header__navbar-icon fa-solid fa-bars"></i>thể loại</a>
+                          <div class="header__notify">
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">lãng mạng</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">kiếm hiệp</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">chuyển sinh</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">khoa học</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">giả tưởng</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">phieu lưu</a></li>
+                            </ul>
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">vui</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">buồn</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">hai kịch</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">bị kich</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">what</a></li>
+                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">wy</a></li>
+                            </ul>
+                          </div>
+                         </li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link"><i class="header__navbar-icon fa-solid fa-file"></i></i>lịch sử</a></li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link"><i class="header__navbar-icon fa-solid fa-gears"></i>danh sách truyện</a></li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link">tìm kiếm nâng cao</a></li>
+                    </ul>
+                    <div class="header__navbar-search">
+                        <div class="header__search">
+                            <input type="text" class="header__navbar-search-input" placeholder="nhập tên truyện cần tiềm">
+                            <button class="header__search-btn">
+                                <i class=" header__search-btn--icon fa-sharp fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <div class="header__navbar-item-link" onclick="hien()">đăng nhập</div>
+                        </li>
+                        <li class="header__navbar-item ">
+                            <div class="header__navbar-item-link" onclick="hien()">đăng ký</div>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+        </header>
+        <div class="khoan_cach">
+
+        </div>
+        <div class="truyen_container">
+            <div class="left">
+                <div class="content">
+                    <h1>Tìm kiếm nâng cao</h1>
+                    <hr color="#6da6b1" />
+                    <h4 style="text-align: left;">thể loại:</h4>
+                    <hr color="#6da6b1" />
+                    <div class="chon_theloai">
+                        <ul class="list_theloai">
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">hành động</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">phiêu lưu</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">kiếm hiệp</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">bi kịch</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">giả tưởng</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">khoa học</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">trường học</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">bạo lực</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">đời thường</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">lãng mạn</li>
+                        </ul>
+                        <ul class="list_theloai">
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">lịch sử </li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">kinh tế</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">ảo thuật</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">võ thuật</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">kịnh dị</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">phép thuật</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">nam mĩ</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">thể thao</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">nghệ thuật</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">hài hước</li>
+                        </ul>
+                        <ul class="list_theloai">
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">khía cạnh cuộc sống</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">khoa học viễn tưởng</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">chính trị</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">hài kịch</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">kịch</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">bí ẩn</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">tâm lí</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">cơ khí</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">chiến tranh</li>
+                            <li class="theloai-li"><input type="checkbox" class="theloai_input">tình yêu</li>
+                        </ul>
+                    </div>
+                    <div class="trangthai" style="text-align: left;">
+                        <input type="text" class="trangthai-list" placeholder="bất cứ điều gì" style="flex: 1;">
+                        <div class="tt--mid">
+                        <input type="text" class="trangthai-list" placeholder="tên tác giả">
+                        <input type="text" class="trangthai-list"placeholder="nhốm dịch /nguồn tiểu thuyết">
+                        </div>
+                        <div class="tt--ft">
+                        <input type="text" class="trangthai-list"placeholder="nhập tên tiểu thuyết">
+                        <input type="button" class="trangthai-list" >tìm truyện
+                        </div> 
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right_content">
+                        <div class="title">Tin Tức</div>
+                        <ul class="categories">
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i> &nbsp;&nbsp;Đăng kí convert</a>
+                            </li>
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i> &nbsp;&nbsp;Bảng lương convert</a>
+                            </li>
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i>  &nbsp;&nbsp;Kiếm tiền với tàng thư viện</a>
+                            </li>
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i> &nbsp;&nbsp;các đơn vị tiền tệ</a>
+                            </li>
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i> &nbsp;&nbsp;các bước để trở thành converter </a>
+                            </li>
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i>&nbsp;&nbsp;TTV translate- ứng dụng convert truyện tren moble</a>
+                            </li>
+                            <li class="lmenu2" >
+                                <a href=""> <i class="fa-solid fa-sun"></i>  &nbsp;&nbsp;thu vien hỡ trợ miễn phí co convert</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <div class="title">Quảng cáo</div>
+                        <div class="box_content">
+                            <iframe width="370px" height="390px" src="https://www.youtube.com/embed/CFjI21M9wZs" title="アニメ『怪獣８号』ノンクレジットOP｜YUNGBLUD「Abyss」｜毎週土曜23時～放送・配信" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="title">lượt xem nhiều nhất</div>
+                        <div class="box_content" style="height:500px;">
+                            <marquee direction="up" height="490px">
+                                <div class="pro_title">blood c (Tái Bản 2018) </div>
+                                <div style="text-align:center"><img src="img/MV5BZjhmYmVmYzEtMzUzZi00ZjUbloodc.jpg" height="120" /></div>
+                                <div class="pro_price">tập 89</div>
+                                <div style="clear:both"></div>
+                                <hr color="#6da6b1" />
+                                <div class="pro_title"> Cô nam (Tái Bản 2019) </div>
+                                <div style="text-align:center"><img src="img/top-nhung-vu-an-co-dong-co-xam-xi-nhat-tham-tu-lung-danh-conan-phan-2-thumb.jpg" height="120" /></div>
+                                <div class="pro_price">movie 15</div>
+                                <div style="clear:both"></div>
+                                <hr color="#6da6b1" />
+                                <div class="pro_title"> Cô nam (Tái Bản 2019) </div>
+                                <div style="text-align:center"><img src="img/top-nhung-vu-an-co-dong-co-xam-xi-nhat-tham-tu-lung-danh-conan-phan-2-thumb.jpg" height="120" /></div>
+                                <div class="pro_price">movie 15</div>
+                                <div style="clear:both"></div>
+                                <hr color="#6da6b1" />
+                                <div class="pro_title"> Cô nam (Tái Bản 2019) </div>
+                                <div style="text-align:center"><img src="img/top-nhung-vu-an-co-dong-co-xam-xi-nhat-tham-tu-lung-danh-conan-phan-2-thumb.jpg" height="120" /></div>
+                                <div class="pro_price">movie 15</div>
+                                <div style="clear:both"></div>
+                            </marquee>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
     </div>  
 </body>
 </html>

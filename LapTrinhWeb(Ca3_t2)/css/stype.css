@@ -136,7 +136,7 @@ color: var(--primary-color);
     background-color: rgb(238,75, 43,0.8);
 }
 .header__navbar-item--has-notiy:hover  .header__notify{
-    display: block;
+    display: flex;
 }
 .header__navbar-item--has--login:hover.madal{
     display: block;
