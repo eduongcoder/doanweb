@@ -54,7 +54,9 @@ body {
     margin-top: 7px;
 }
 
-
+.khoan_cach{
+    height: 80px;
+}
 
 
 #menu {
@@ -117,7 +119,7 @@ body {
 }
 .truyen_container{
    display: flex;
-   width: 80%;
+   width: 70%;
    margin: auto;
    justify-content:space-between;
 }
@@ -127,9 +129,6 @@ body {
     justify-content:center ;
     background-color: white;
 }
-
-
-
 
 
 .content{
@@ -242,10 +241,10 @@ body {
 
 .center_title {
     line-height: 33px;
-    color: #847676;
+    color: #fff;
     font-weight: bold;
     background: url(../images/layout/bar_bg.gif) no-repeat center;
-    background-color: #7d1317;
+    background-color: #00A3D9;
     text-align: left;
 }
 
@@ -258,14 +257,14 @@ body {
 }
 .cuon{
     background-color:white;
-    width: 80%;
     margin: auto;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 .center_cuon {
     padding: 10px;
     flex: 1;
     display: flex;
-    overflow:scroll;
     cursor: none;
 }
 .product_box {
