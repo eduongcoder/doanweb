@@ -107,18 +107,17 @@ html{
 }
 .btn{
     min-width: 142px;
-    height: 24px;
+    height: 30px;
     text-decoration: none;
     border: none;
     border-radius: 2px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 0 12px;
     cursor: pointer;
     color: var(--text-color);
     align-items: center;
     justify-content: center;
     line-height: 1.6rem;
-    justify-content: center;
 }
 .btn.btn--nomal:hover{
     background-color: rgb(0, 0, 0,0.05);
@@ -126,12 +125,11 @@ html{
 .btn.btn--size-s{
     height: 32px;
     font-size: 12px;
-    padding: 0 4px;
+    padding: 10px 10px;
 }
 .btn.btn--primary{
     color: var(--white-color);
     background-color: var(--primary-color);
-
 }
 .btn.btn--disaled{
     cursor: default;

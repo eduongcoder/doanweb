@@ -55,7 +55,7 @@ body {
 }
 
 .khoan_cach{
-    height: 80px;
+    height: 100px;
 }
 
 
@@ -124,7 +124,7 @@ body {
    justify-content:space-between;
 }
 .left {
-    width: 70%;
+    flex: 1;
     display: flex;
     justify-content:center ;
     background-color: white;
@@ -132,12 +132,19 @@ body {
 
 
 .content{
-    flex: 3;
+    flex: 2;
     text-align: center;
+
+}
+.content1{
+    
+    text-align: center;
+    
 }
 
 .right {
-   
+    flex: 1;
+   background-color: black;
 }
 .chon_theloai{
     display: flex;

@@ -175,7 +175,7 @@ color: var(--primary-color);
     margin-top: 18px;
 }
 .auth-form__policy-text{
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     line-height: 1.8rem;
     text-align: center  ;
     padding: 0 12px;
@@ -206,10 +206,10 @@ margin-top: 24px;
 .auth-form__socials-icon,
 .auth-form__socials--fb{
     color: var(--white-color);
-
 }
 .auth-form__socials--gg{
     background-color: var(--white-color);
+    color: var(--primary-color);
 }
 .auth-form__socials--fb{
     color: #666;
@@ -269,4 +269,11 @@ margin-top: 24px;
 }
 .header__search-btn--icon{
 
+}
+.auth-form__social-title{
+    line-height: 30px;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
+    margin-top: 10px;
 }
