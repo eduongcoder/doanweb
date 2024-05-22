@@ -96,7 +96,7 @@ color: var(--primary-color);
 .header__notify{
     position: absolute;
     top:100%;
-    width: 200px;
+    width: 290px;
     border:  1px solid #772953;
     background-color: var(--white-color);
     cursor: default;
@@ -146,7 +146,7 @@ color: var(--primary-color);
     font-size: 1.5rem;
 }
 .header__notify-item{
-    text-align: center;
+    text-align: left;
 }
 .right__notify-item{
     text-align: left;
