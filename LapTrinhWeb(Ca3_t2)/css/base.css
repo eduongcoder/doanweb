@@ -85,8 +85,9 @@ html{
     bottom: 0;
     right: 0;
     left: 0;
-    display: none;
-    animation: ideIn linear 0.1s ;
+    display:none;
+    animation:ideIn   5s ;
+    
 }
 .madal__overplay{
     position: absolute;
