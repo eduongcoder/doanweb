@@ -134,6 +134,7 @@ z-index: 1;
     height: 100%;
     display: flex;
     width: max-content;
+    transform: 1s;
 }
 .itemPro img{
     width: 1000px;
@@ -198,12 +199,44 @@ z-index: 1;
   /* align-items: center; */
   width: 100%;
 }
-
+.checkbox-grid {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+  
+.checkbox-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
 .left_s{
     flex-basis: 80%;
     margin: 0 15px;
     background-color: var(--white-color);
+}
+.left_ct{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  flex-basis: 80%;
+  margin: 0 15px;
+  background-color: var(--white-color);
+  width: 100%; /* Đặt chiều rộng của .container bằng 100% */
+  max-width: 800px; /* Giới hạn chiều rộng tối đa của .container */
+  padding: 2rem; 
+}
+.left-ck{
+    text-align: center; 
 }
 .right_s {
     flex-basis: 20%;
