@@ -22,13 +22,13 @@ body {
     background-color: white;
 }
 
-#header {
+/* #header {
     border-radius: 5px;
     justify-content: space-around; 
     display: flex;
     margin-left: 200px;
     margin-right: 200px;
-}
+} */
 .taikhoan{
     display: flex;
 }
@@ -54,9 +54,7 @@ body {
     margin-top: 7px;
 }
 
-.khoan_cach{
-    height: 100px;
-}
+
 
 
 #menu {
@@ -117,32 +115,20 @@ body {
 #path {
     height: 15px;
 }
-.truyen_container{
+#story_container{
    display: flex;
    width: 70%;
    margin: auto;
    justify-content:space-between;
 }
-.left {
-    flex: 1;
-    display: flex;
-    justify-content:center ;
-    background-color: white;
-}
 
-
-.content{
-    flex: 2;
-    text-align: center;
-
-}
 .content1{
     
     text-align: center;
     
 }
 
-.right {
+#right_s {
     flex: 1;
    background-color: black;
 }
@@ -187,44 +173,13 @@ body {
     background-image: url(../images/layout/shoppingcart.png)
 }
 
-.footer {
-    height: 60px;
-    color: #847676;
-    font-size: 12px;
-    text-align: center;
-    line-height: 20px;
-    font-style: italic;
-    background-image: url(../images/layout/footer_bg.gif);
-}
 
-.categories {
-    list-style-type: none;
-    margin-top: 0px;
-    margin-left: -40px;
-    
-}
-.categories li{
-    text-align: left;
-}
-.categories li a {
-    text-decoration: none;
-    color: #504b4b;
-    line-height: 30px;
 
-}
 
-.categories li a:hover {
-    font-weight: bold;
-}
 
-.title {
-    line-height: 30px;
-    text-align: center;
-    color: #FFF;
-    font-weight: bold;
-    background-color: #0bb1a7;
-    margin-top: 10px;
-}
+
+
+
 .title1 {
     line-height: 30px;
     color: #FFF;
@@ -248,82 +203,22 @@ body {
     margin-bottom: 1px;
 }
 
-.box_content {
-    text-align: center;
-    border: 3px solid #504b4b;
-    padding: 2px;
-    
-}
 
-.center_title {
-    line-height: 33px;
-    color: #fff;
-    font-weight: bold;
-    background: url(../images/layout/bar_bg.gif) no-repeat center;
-    background-color: #00A3D9;
-    text-align: left;
-}
 
-.center_content {
-    padding: 7px;
-    justify-content:space-evenly;
-    flex: 1;
-    text-align: center;
-    display: flex;
-}
-.cuon{
-    background-color:white;
-    margin: auto;
-    margin-left: 250px;
-    margin-right: 250px;
-}
+
+
+
+
 .center_cuon {
     padding: 10px;
     flex: 1;
     display: flex;
     cursor: none;
 }
-.product_box {
-    width: 180px;
-    height: auto;
-    float: left;
-    padding: 9px;
-}
 
-.pro_box_top {
-    height: 12px;
-    background-image: url(../images/layout/product_box_top.gif);
-}
 
-.pro_box_bot {
-    height: 10px;
-    background-image: url(../images/layout/product_box_bottom.gif);
-}
 
-.pro_box_mid {
-    background-image: url(../images/layout/product_box_center.gif);
-}
 
-.pro_title {
-    text-align: center;
-    font-weight: bold;
-    color: #F00;
-    font-size: 14px;
-}
-
-.pro_title a {
-    text-decoration: none;
-    color: #F00;
-}
-
-.pro_price {
-    text-align: center;
-    color: #F00;
-    font-weight: bold;
-    width: 50%;
-    float: left;
-    font-size: 14px;
-}
 
 .oldprice {
     text-align: center;
@@ -334,27 +229,8 @@ body {
     font-size: 14px;
 }
 
-.pro_cart {
-    width: 50%;
-    float: right;
-    font-size: 14px;
-    text-align: center;
-}
 
-.pro_cart a {
-    text-decoration: none;
-    color: #0fa0dd;
-}
 
-.pro_img {
-    text-align: center;
-    padding: 5px 0px;
-}
-
-.pro_img img {
-    height: 200px;
-    width: 150px;
-}
 
 .big_box {
     width: 554px;
@@ -472,7 +348,3 @@ button i {
     margin-right: 5px;
 }
 
-.price2
-{
-	text-align:center; color:#F00; width:50%; float:left; font-size:14px;
-}

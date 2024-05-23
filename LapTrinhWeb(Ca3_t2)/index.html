@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/stype.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,224 +11,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.js">
     <script src="js/main.js"></script>
+    <script src="js/sty.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>tiểu thuyết</title>
 </head>
 <body>
-    <div class="story">
-        <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item"><a href="/index1.html" class="header__navbar-item-link">trang chủ</a></li>
-                        <li class="header__navbar-item header__navbar-item--has-notiy">
-                         <a href="" class="header__navbar-item-link"><i class="header__navbar-icon fa-solid fa-bars"></i>thể loại</a>
-                          <div class="header__notify">
-                            <ul class="header__notify-list">
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">lãng mạng</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">kiếm hiệp</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">chuyển sinh</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">khoa học</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">giả tưởng</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">phieu lưu</a></li>
-                            </ul>
-                            <ul class="header__notify-list">
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">vui</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">buồn</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">hai kịch</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">bị kich</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">what</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">wy</a></li>
-                            </ul>
-                            <ul class="header__notify-list">
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">vui</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">buồn</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">hai kịch</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">bị kich</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">what</a></li>
-                                <li class="header__notify-item header__notify-item--view"><a href="" class="header__notify-link">wy</a></li>
-                            </ul>
-                          
-                          </div>
-                         </li>
-                        <li class="header__navbar-item"><a href="/index2.html" class="header__navbar-item-link"><i class="header__navbar-icon fa-solid fa-file"></i></i>lịch sử</a></li>
-                        <li class="header__navbar-item"><a href="/index2.html" class="header__navbar-item-link"><i class="header__navbar-icon fa-solid fa-gears"></i>danh sách truyện</a></li>
-                        <li class="header__navbar-item"><a href="/index3.html" class="header__navbar-item-link">tìm kiếm nâng cao</a></li>
+    <div id="main_story">
+        <header id="header">
+            <ul id="nav">
+                <li><a href="/index1.html" ><i class="fa-solid fa-house-chimney"></i>home</a></li>
+                <li ><a href="/index2.html" ><i class="fa-solid fa-file"></i></i>lịch sử</a></li>
+                <li ><a href="/index2.html" ><i class="fa-solid fa-gears"></i>danh sách truyện</a></li>
+                <li ><a href="/index3.html" >tìm kiếm nâng cao</a></li>
+                <li >
+                    <a onclick="hiendn()">đăng nhập</a>
+                </li>
+                <li>
+                    <a onclick="hiendk()">đăng ký</a>
+                </li>
+                <li>
+                    <a href="" ><i class=" fa-solid fa-bars"></i>thể loại</a>
+                    <ul class="subnav">
+                       <li><a href="">Action</a><a href="">Action</a><a href="">Action</a></li>
+                       <li><a href="">Horror</a><a href="">Action</a><a href="">Action</a></li>
+                       <li><a href="">Adventure</a><a href="">Action</a><a href="">Action</a></li>
+                       <li><a href="">comedy</a><a href="">Action</a><a href="">Action</a></li>
+                       <li><a href="">Drama</a><a href="">Action</a><a href="">Action</a></li>
+                       <li><a href="">School</a><a href="">Action</a><a href="">Action</a></li>
                     </ul>
-                    <div class="header__navbar-search">
-                        <div class="header__search">
-                            <input type="text" class="header__navbar-search-input" placeholder="nhập tên truyện cần tiềm">
-                            <button class="header__search-btn">
-                                <i class=" header__search-btn--icon fa-sharp fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
-                            <div class="header__navbar-item-link" onclick="hiendn()">đăng nhập</div>
-                        </li>
-                        <li class="header__navbar-item ">
-                            <div class="header__navbar-item-link" onclick="hiendk()">đăng ký</div>
-                        </li>
-                    </ul>
-                </nav>
-        </div>
+                </li>
+            </ul>
+            <div class="search-btn">
+                <i class="search-icon fa-sharp fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div id="m-m" class="mobile-m-b">
+                <i class="m-icon fa-solid fa-bars"></i>
+            </div>
         </header>
         <div class="khoan_cach">
 
         </div>
-        <div class="cuon">
-            <div class="center_title">truyện nổi bật nhất  </div>
-            <marquee behavior="" direction="">
-                <div class="center_cuon">
-                    <div class="product_box">
-                        <div class="pro_box_top"></div>
-                        <div class="pro_box_mid">
-                            <div class="pro_title">naruto</div>
-                            <div class="pro_img"><a href="#"><img src="img/Naruto_01_m.jpg" /></a></div>
-                            <div class="price2" >chương 120</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" />xem</a></div>
-                            <div style="clear:both"></div>
-                        </div>
-                        <div class="pro_box_bot"></div>
-                    </div>
-                    <div class="product_box">
-                        <div class="pro_box_top"></div>
-                        <div class="pro_box_mid">
-                            <div class="pro_title">mùa hè làng quê</div>
-                            <div class="pro_img"><a href="#"><img src="img/MV5BZjhmYmVmYzEtMzUzZi00ZjUbloodc.jpg" /></a></div>
-                            <div class="price2" >chương 50</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" />xem</a></div>
-                            <div style="clear:both"></div>
-                        </div>
-                        <div class="pro_box_bot"></div>
-                    </div>
-                    <div class="product_box">
-                        <div class="pro_box_top"></div>
-                        <div class="pro_box_mid">
-                            <div class="pro_title"><a href="#">hakako</a></div>
-                            <div class="pro_img"><a href="#"><img src="img/truyen2.jpg" /></a></div>
-                            <div class="price2" >chương 150</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
-                            <div style="clear:both"></div>                
-                        </div>
-                        <div class="pro_box_bot"></div>
-                    </div>
-                    <div class="product_box">
-                        <div class="pro_box_top"></div>
-                        <div class="pro_box_mid">
-                            <div class="pro_title"><a href="#">bạc anh quỷ</a></div>
-                            <div class="pro_img"><a href="#"><img src="img/bac_anh_quy.jpg" /></a></div>
-                            <div class="price2" >chương 49</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
-                            <div style="clear:both"></div>                
-                        </div>
-                        <div class="pro_box_bot"></div>
-                    </div>
-                    <div class="product_box">
-                        <div class="pro_box_top"></div>
-                        <div class="pro_box_mid">
-                            <div class="pro_title"><a href="#">đại chiến người titan</a></div>
-                            <div class="pro_img"><a href="#"><img src="img/aot.jpg" /></a></div>
-                            <div class="price2" >chương 250</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
-                            <div style="clear:both"></div>                
-                        </div>
-                        <div class="pro_box_bot"></div>
-                    </div>
-                    <div class="product_box">
-                        <div class="pro_box_top"></div>
-                        <div class="pro_box_mid">
-                            <div class="pro_title">Berserk_vol01<a href="#"></a></div>
-                            <div class="pro_img"><a href="#"><img src="img/Berserk_vol01.jpg" /></a></div>
-                            <div class="price2" >chương 526</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
-                            <div style="clear:both"></div>                
-                        </div>
-                        <div class="pro_box_bot"></div>
-                    </div>
-                     <div class="product_box">
-                        <div class="pro_box_top"></div>
-                        <div class="pro_box_mid">
-                            <div class="pro_title"><a href="#">Fullmetal Alchemist</a></div>
-                            <div class="pro_img"><a href="#"><img src="img/Bìa_truyện_Fullmetal_Alchemist_của_Nhật.jpg" /></a></div>
-                            <div class="price2" >chương 710</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
-                            <div style="clear:both"></div>                
-                        </div>
-                        <div class="pro_box_bot"></div>
-                    </div>
-                    <div class="product_box">
-                        <div class="pro_box_top"></div>
-                        <div class="pro_box_mid">
-                            <div class="pro_title"><a href="#">cánh cửa</a></div>
-                            <div class="pro_img"><a href="#"><img src="img/canh_cua.jpg" /></a></div>
-                            <div class="price2" >chương 321</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
-                            <div style="clear:both"></div>                
-                        </div>
-                        <div class="pro_box_bot"></div>
-                    </div>
-                    <div class="product_box">
-                        <div class="pro_box_top"></div>
-                        <div class="pro_box_mid">
-                            <div class="pro_title"><a href="#">cô dâu đen</a></div>
-                            <div class="pro_img"><a href="#"><img src="img/co_dau_den.jpg" /></a></div>
-                            <div class="price2" >chương 49</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
-                            <div style="clear:both"></div>                
-                        </div>
-                        <div class="pro_box_bot"></div>
-                    </div>
-                    <div class="product_box">
-                        <div class="pro_box_top"></div>
-                        <div class="pro_box_mid">
-                            <div class="pro_title"><a href="#">fairy tail</a></div>
-                            <div class="pro_img"><a href="#"><img src="img/fairy_tail.webp" /></a></div>
-                            <div class="price2" >chương 481</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" /> xem</a></div>
-                            <div style="clear:both"></div>                
-                        </div>
-                        <div class="pro_box_bot"></div>
-                    </div>
-                    <div class="product_box">
-                        <div class="pro_box_top"></div>
-                        <div class="pro_box_mid">
-                            <div class="pro_title"><a href="#">vua hải tặc</a></div>
-                            <div class="pro_img"><a href="#"><img src="img/onepi.jpg" /></a></div>
-                            <div class="price2" >chương 1500</div><div class="pro_cart"><a href="#"><img src="images/layout/cart.gif" width="9" height="9" />xem</a></div>
-                            <div style="clear:both"></div>                
-                         </div>
-                        <div class="pro_box_bot"></div>
-                    </div>
-                     </div>
-            </marquee>
+        <div class="slider">
+               <div class="ListPro">
+                <div class="itemPro"><img class="img" src="img/Chainsawman.jpg" alt=""></div>
+                <div class="itemPro"><img src="img/bac_anh_quy.jpg" alt=""></div>
+                <div class="itemPro"><img src="img/aot.jpg" alt=""></div>
+                <div class="itemPro"><img src="img/co_dau_den.jpg" alt=""></div>
+                <div class="itemPro"><img src="img/fairy_tail.webp" alt=""></div>
+               </div>
+               <div class="btn-sli">
+                <button id="pre"><</button>
+                <button id="next">></button>
+               </div>
+               <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+               </ul>
         </div>
+
         <div class="khoan_cach">
             
         </div>
-        <div class="truyen_container">
-            <div class="left">
-                <!-- <div class="left_content">
-                    <div class="title1">
-                        <a  href="#"><button style="background-color: rgb(53, 58, 58);"><i class="fa-solid fa-bars"></i></button>Thể loại</a>
-                    </div>
-                    <ul class="categories">
-                        <li class="lmenu1" >
-                            <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon"> <i class="fa-solid fa-font-awesome"></i></i>tiên hiệp</a> 
-                            <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon"> <i class="fa-solid fa-biohazard"></i>huyền huyễn</a> 
-                        </li>
-                        <li class="lmenu1" >
-                            <a href=""><i class="fa-solid fa-cannabis"></i>&nbsp;&nbsp;đô thị</a> <a href=""><i class="fa-solid fa-biohazard"></i>  &nbsp;&nbsp;khoa huyễn</a>
-                        </li>
-                        <li class="lmenu1" >
-                            <a href=""> <i class="fa-solid fa-font-awesome"></i></i>&nbsp;&nbsp;kỳ huyễn</a> <a href=""><i class="fa-solid fa-cannabis"></i>  &nbsp;&nbsp;võ hiệp</a>
-                        </li>
-                        <li class="lmenu1" >
-                            <a href=""> <i class="fa-solid fa-staff-snake"></i> &nbsp;&nbsp;lịch sử</a> <a href=""><i class="fa-solid fa-circle-radiation"></i>  &nbsp;&nbsp;đồng nhân</a>
-                        </li>
-                        <li class="lmenu1" >
-                            <a href=""><i class="fa-solid fa-heart-pulse"></i>  &nbsp;&nbsp;quân sự</a> <a href=""> <i class="fa-solid fa-heart"></i> &nbsp;&nbsp;du hi</a>
-                        </li>
-                        <li class="lmenu1" >
-                            <a href=""> <i class="fa-solid fa-staff-snake"></i> &nbsp;&nbsp;cảnh kỹ</a> <a href=""> <i class="fa-solid fa-heart-pulse"></i> &nbsp;&nbsp;linh di</a>
-                        </li>
-                        <li class="lmenu1" >
-                            <a href=""> <i class="fa-solid fa-circle-radiation"></i> &nbsp;&nbsp;ngôn tình</a> <a href=""> <i class="fa-solid fa-heart"></i> &nbsp;&nbsp;tất cả</a>
-                        </li>
-                    </ul>
-                </div> -->
-                <div class="content">
+        <div id="story_container">
+            <div class="content_s">
+                <div class="left_s">
                     <div class="center_title">truyện mới cập nhật <button style="background-color: #0bb1a7;">xem tất cả</button></div>
                     <div class="center_content">
                         <div class="product_box">
@@ -407,7 +256,7 @@
                    </div>  
             
                 </div>
-                <div class="right">
+                <div class="right_s">
                     <div class="right_content">
                         <div class="title">Tin Tức</div>
                         <ul class="categories">
@@ -470,7 +319,7 @@
             </div> 
         </div>
         <div id="path"></div>
-        <div class="footer">
+        <div id="footer">
             Copyright&copy;web sách <br /> Địa chỉ: 180 Cao Lỗ Phường 4 Quận 8 Tp.HCM<br />
 
         </div>
@@ -561,6 +410,34 @@
             </div>
             <div class="madal_inner"></div>
         </div> 
+        <div id="contener">
+            <div class="conten_s">
+                <div class="left"></div>
+                <div class="riht_s"></div>
+            </div>
+        </div>
+       
     </div>
+    <script>
+        var header = document.getElementById('header');
+        var mm = document.getElementById('m-m');
+        var hh = header.clientHeight;
+        mm.onclick = function(){
+            var isClosed =header.clientHeight === hh;
+            if(isClosed){
+                header.style.height = 'auto';
+            } else{
+                header.style.height = null;
+            }
+        }
+        var its = document.querySelectorAll('#nav li a[herf*="#"]')
+        for(var i = 0; i< its.length; i++){
+            var it = its[i];
+            console.log(it.nextElementSibling);
+            it.onclick = function(){
+                header.style.height = null;
+            }
+        }
+    </script>
 </body>
 </html>
