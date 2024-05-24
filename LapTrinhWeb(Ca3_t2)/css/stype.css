@@ -18,7 +18,8 @@ z-index: 1;
     display: inline-block;
 }
 #nav, 
-.subnav {
+.subnav,
+.item-c {
     list-style-type: none;
 }
 
@@ -31,7 +32,17 @@ z-index: 1;
     display: inline-block;
     margin-right: 20px;
 }
-#nav li:hover .subnav{
+.list-c{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    color: #00A3D9;
+    margin-bottom: 20px;
+}
+#nav li:hover .subnav,
+.list-c:hover .item-c{
     display: block;
     cursor: pointer;
 }
@@ -83,6 +94,18 @@ z-index: 1;
     width: 290px;
     border:  1px solid #772953;
     background-color: var(--white-color);
+    cursor: default;
+    transform-origin: top left;
+    animation: heatify ease-in 0.2s;
+    will-change: opacity,transform ;
+    display: none;
+}
+.item-c{
+    position: absolute;
+    top:100%;
+    width: 100px;
+    border:  1px solid #772953;
+    background-color: var(--border-color);
     cursor: default;
     transform-origin: top left;
     animation: heatify ease-in 0.2s;
@@ -237,6 +260,51 @@ z-index: 1;
 }
 .left-ck{
     text-align: center; 
+    align-items: center;
+}
+.left-btn-ip{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.l-btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.ip-a,
+.btn-ip {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ip-a input {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 10px;
+    height: 40px;
+  }
+  .btn-ip input {
+    flex: 4; /* input chiếm 80% */
+    margin-right: 10px;
+    height: 40px;
+  }
+  
+  .btn-ip button {
+    flex: 1; /* button chiếm 20% */
+    height: 40px;
+  }
+  
+.l-c-ck-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%; 
+    border: 5px solid black;
+    border-radius: 5px;
 }
 .right_s {
     flex-basis: 20%;
