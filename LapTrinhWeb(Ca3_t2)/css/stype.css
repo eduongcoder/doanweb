@@ -371,7 +371,7 @@ z-index: 1;
     color: #F00;
     font-weight: bold;
     width: 50%;
-    float: left;
+    /* float: left; */
     font-size: 14px;
 }
 .center_content {
@@ -419,7 +419,9 @@ z-index: 1;
 }
 .price2
 {
-	text-align:center; color:#F00; width:50%; float:left; font-size:14px;
+	text-align:center; color:#F00;
+     /* width:50%;  */
+     float:left; font-size:14px;
 }
 .right_content{
     height: auto;
@@ -443,8 +445,8 @@ z-index: 1;
     background-color: #00A3D9;
 }
 .pro_cart {
-    width: 50%;
-    float: right;
+    /* width: 50%; */
+    /* float: right; */
     font-size: 14px;
     text-align: center;
 }
