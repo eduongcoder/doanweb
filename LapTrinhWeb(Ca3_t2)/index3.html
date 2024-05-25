@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.js">
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="js/sty.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
@@ -56,7 +57,7 @@
                 <div class="left_s">
                     <div class="center_title">danh sách truyện <button style="background-color: #0bb1a7;">thêm tất cả</button></div>
                     <div class="center_content">
-                        <div class="product_box">
+                        <div class="product_box" data-index="0" >
                             <div class="pro_box_top"></div>
                             <div class="pro_box_mid">
                                 <div class="pro_title">naruto</div>
@@ -66,7 +67,7 @@
                             </div>
                             <div class="pro_box_bot"></div>
                         </div>
-                        <div class="product_box">
+                        <div class="product_box" data-index="1" >
                             <div class="pro_box_top"></div>
                             <div class="pro_box_mid">
                                 <div class="pro_title">mùa hè làng quê</div>
@@ -76,7 +77,7 @@
                             </div>
                             <div class="pro_box_bot"></div>
                         </div>
-                        <div class="product_box">
+                        <div class="product_box" data-index="2">
                             <div class="pro_box_top"></div>
                             <div class="pro_box_mid">
                                 <div class="pro_title"><a href="#">hakako</a></div>
@@ -87,7 +88,7 @@
                             <div class="pro_box_bot"></div>
                         </div>
                         
-                        <div class="product_box">
+                        <div class="product_box" data-index="3">
                             <div class="pro_box_top"></div>
                             <div class="pro_box_mid">
                                 <div class="pro_title"><a href="#">vua hải tặc</a></div>
@@ -102,7 +103,7 @@
                   <div style="clear:both"></div>
                 
                   <div class="center_content">
-                    <div class="product_box">
+                    <div class="product_box" data-index="4">
                         <div class="pro_box_top"></div>
                         <div class="pro_box_mid">
                             <div class="pro_title"><a href="#">Sơn goal</a></div>
@@ -112,7 +113,7 @@
                         </div>
                         <div class="pro_box_bot"></div>
                     </div>
-                    <div class="product_box">
+                    <div class="product_box" data-index="5">
                         <div class="pro_box_top"></div>
                         <div class="pro_box_mid">
                             <div class="pro_title"><a href="#">goth</a></div>
@@ -123,7 +124,7 @@
                         <div class="pro_box_bot"></div>
                     </div>
                     
-                    <div class="product_box">
+                    <div class="product_box" data-index="6">
                         <div class="pro_box_top"></div>
                         <div class="pro_box_mid">
                             <div class="pro_title"><a href="#">đại ciến thầy cúng</a></div>
@@ -133,7 +134,7 @@
                          </div>
                         <div class="pro_box_bot"></div>
                     </div>
-                    <div class="product_box">
+                    <div class="product_box" data-index="7">
                         <div class="pro_box_top"></div>
                         <div class="pro_box_mid">
                             <div class="pro_title"><a href="#">lớp học tìn thương</a></div>
@@ -145,7 +146,7 @@
                     </div>
                    </div>  
                    <div class="center_content">
-                    <div class="product_box">
+                    <div class="product_box" data-index="8">
                         <div class="pro_box_top"></div>
                         <div class="pro_box_mid">
                             <div class="pro_title"><a href="#">junji ito collection</a></div>
@@ -155,7 +156,7 @@
                         </div>
                         <div class="pro_box_bot"></div>
                     </div>
-                    <div class="product_box">
+                    <div class="product_box" data-index="9">
                         <div class="pro_box_top"></div>
                         <div class="pro_box_mid">
                             <div class="pro_title"><a href="#">demon slayer</a></div>
@@ -166,7 +167,7 @@
                         <div class="pro_box_bot"></div>
                     </div>
                     
-                    <div class="product_box">
+                    <div class="product_box" data-index="10">
                         <div class="pro_box_top"></div>
                         <div class="pro_box_mid">
                             <div class="pro_title"><a href="#">thủ lĩnh thẻ bài</a></div>
@@ -176,7 +177,7 @@
                          </div>
                         <div class="pro_box_bot"></div>
                     </div>
-                    <div class="product_box">
+                    <div class="product_box" data-index="11">
                         <div class="pro_box_top"></div>
                         <div class="pro_box_mid">
                             <div class="pro_title"><a href="#">one puch man</a></div>
@@ -188,7 +189,7 @@
                     </div>
                    </div>  
                    <div class="center_content">
-                    <div class="product_box">
+                    <div class="product_box" data-index="12">
                         <div class="pro_box_top"></div>
                         <div class="pro_box_mid">
                             <div class="pro_title"><a href="#">cô dâu đen</a></div>
@@ -198,7 +199,7 @@
                         </div>
                         <div class="pro_box_bot"></div>
                     </div>
-                    <div class="product_box">
+                    <div class="product_box" data-index="13">
                         <div class="pro_box_top"></div>
                         <div class="pro_box_mid">
                             <div class="pro_title"><a href="#">quỷ cưa</a></div>
@@ -209,7 +210,7 @@
                         <div class="pro_box_bot"></div>
                     </div>
                     
-                    <div class="product_box">
+                    <div class="product_box" data-index="14">
                         <div class="pro_box_top"></div>
                         <div class="pro_box_mid">
                             <div class="pro_title"><a href="#">zoo</a></div>
@@ -219,7 +220,7 @@
                          </div>
                         <div class="pro_box_bot"></div>
                     </div>
-                    <div class="product_box">
+                    <div class="product_box" data-index="15">
                         <div class="pro_box_top"></div>
                         <div class="pro_box_mid">
                             <div class="pro_title"><a href="#">tạm biệt eri</a></div>
@@ -414,6 +415,12 @@
                 header.style.height = null;
             }
         }
+
+            $('.product_box').click(function() {
+        const index = $(this).data('index');
+        window.location.href = `pro_index.html?index=${index}`;
+});
+
     </script>  
 </body>
 </html>

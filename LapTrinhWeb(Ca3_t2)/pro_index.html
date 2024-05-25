@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.js">
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="js/sty.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
@@ -51,48 +52,152 @@
     <div id="story_container">
         <div class="content-pro">
             <div class="content-h">
-                <h1>Ten tieu thuyet</h1>
-                <p>the loai:action
+                <h1 id="story-title">Tên tiểu thuyết</h1>
+                <p id="story-genre">the loai:action</p>
+                <p id="story-short-description">
+                    Naruto[a] là một loạt manga Nhật Bản được viết và minh họa bởi Kishimoto Masashi.
                 </p>
-                <p> Naruto[a] là một loạt manga Nhật Bản được viết và minh họa bởi Kishimoto Masashi. </p>
             </div>
             <div class="content-t">
-                <p>noi dung tieu thuyet</p>
-                <p>
-                    Naruto[a] is a Japanese manga series written and illustrated by Kishimoto Masashi. 
-                    The manga was first serialized in Weekly Shonen Jump from September 1999 to November 2014, 
-                    and was later released by Shueisha into 72 tankōbon volumes. The story revolves around Uzumaki Naruto, 
-                    A young ninja wants to find a way to assert himself to be recognized by everyone and pursue his dream of becoming Hokage - 
-                    leader of Konoha Village. The plot is divided into two parts – the first part is set a few years before adolescence 
-                    (Naruto Dattebayo) and the second part is in Naruto's teenage years (Naruto Shippuden). The series is 
-                    based on two of Kishimoto's Yomikiri: Karakuri (1995), which helped Kishimoto win Shueisha's monthly Hop Step Award the following year, and Naruto (1997).
-                    Naruto was serialized in Weekly Shōnen Jump, Shueisha's magazine from 1999 to 2014, and was packaged in tankōbon with 72 volumes. The manga was adapted into an anime series co-produced by Pierrot and Aniplex, with a total of 220 episodes broadcast in Japan from 2002 to 2007;
+                <p id="story-content-title">Nội dung tiểu thuyết</p>
+                <p id="story-content">
                     
-                    Naruto is in fourth place on the list of best-selling manga, selling 250 million copies worldwide 
-                    world, with 153 million copies sold in Japan alone and the remaining 97 million copies sold in other countries. 
-                    other places. The work became one of Viz Media's best-selling manga series; English translations
-                    of the series appeared several times on the USA Today and The New York Times bestseller lists, and the seventh volume won a Quill Award. 
-                    in 2006. Reviewed positively by critics for the manga's character development, strong plot, well-done fight scenes, 
-                    although the fight scenes slow down the pace of the story. Experts also emphasize that the manga, which has a coming-of-age theme, uses cultural references from Japanese mythology and Confucianism.
-                    2016 and 2017 with the first 196 episodes. Besides the anime series, Pierrot simultaneously developed eleven movies and twelve OVAs. Other Naruto-related franchises include light novels, video games, and trading cards developed by different companies.
-
-
-                    Hierarchy of chakra elements (Fire, Wind, Lightning, Earth, Water).
-                    However, Naruto's childhood was not very peaceful when the people of Konoha village constantly shunned him 
-                    showing fear and anger towards him, treating Naruto as if he were a demon fox,
-                    is a potential threat to Konoha village. A rule was set by the Third Hokage to prevent it 
-                    prohibit everyone from discussing or mentioning the demon fox attack to anyone, even
-                    is with your children. Even so, this did not stop them from treating him as a person 
-                    on the sidelines. He grew up an orphan without family, friends, or any recognition. Because no
-                    You can't force people to be your friend and care about you, so you have to find a way to get attention 
-                    desire to be recognized through mischief and mischief.
+                    <!-- Nội dung tĩnh sẽ được thay thế bằng dữ liệu động từ JavaScript -->
                 </p>
             </div>
         </div>
     </div>
+
+    <div id="storyDetail"></div>
     <div id="path"></div>
     <div id="footter">
         Copyright&copy;web sách <br /> Địa chỉ: 180 Cao Lỗ Phường 4 Quận 8 Tp.HCM<br />
     </div>
+    <script>
+        // Mảng chứa thông tin truyện (phải đồng bộ với mảng trên trang chính)
+        const stories = [
+    {
+        title: "Naruto",
+        genre: "Hành động",
+        shortDescription: "Naruto là một loạt manga Nhật Bản được viết và minh họa bởi Kishimoto Masashi.",
+        content: "Naruto là một loạt manga Nhật Bản được viết và minh họa bởi Kishimoto Masashi."
+    },
+    {
+        title: "Mùa hè làng quê",
+        genre: "Lãng mạn",
+        shortDescription: "Nội dung truyện Mùa hè làng quê.",
+        content: "Đây là nội dung chi tiết của truyện Mùa hè làng quê."
+    },
+    {
+        title: "Hakako",
+        genre: "Hành động",
+        shortDescription:"Câu truyện dui lắm",
+        content: "Tại học viện Kamone, nơi nổi tiếng với “Bảy điều kỳ bí trường học”, một trong số đó là về Hanako-san. Người “thống trị” buồng thứ ba của nhà vệ sinh nữ trên tầng ba trong tòa nhà cũ của trường học, Hanako-san ban tặng tất cả điều ước cho bất kì người nào khi được triệu hồi. Yashiro Nene, một học sinh trung học khép kín nhưng thường xuyên mơ mộng về những câu chuyện tình yêu lãng mạn, đã mạo hiểm khám phá khu nhà vệ sinh bị ám này… nhưng Hanako-san mà cô gặp không hề giống như những gì cô đã tưởng tượng! Kanako-san của học viện Kamone…Là một đứa con trai ư? Để trải nghiệm truyện tranh tốt nhất, bạn nên đăng ký tài khoản tại NetTruyenX. Bạn sẽ có thể theo dõi những bộ truyện yêu thích, bình luận và giao lưu với cộng đồng độc giả sôi nổi. NetTruyenX tự hào mang đến cho bạn thế giới truyện tranh đa dạng và phong phú, với nhiều thể loại và tác phẩm hấp dẫn. Hãy đăng ký ngay hôm nay để khám phá những điều thú vị cùng Hanako-Kun Nhà Xí!"
+    },
+    {
+        title: "Vua hải tặc",
+        genre: "Phiêu lưu",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    },
+    {
+        title: "Sơn goal",
+        genre: "",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    },
+    {
+        title: "Goth",
+        genre: "",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    },
+    {
+        title: "Đại chiến thầy cúng",
+        genre: "",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    },
+    {
+        title: "Lớp học tình thương",
+        genre: "",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    },
+    {
+        title: "Junji Ito Collection",
+        genre: "",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    },
+    {
+        title: "Demon Slayer",
+        genre: "",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    },
+    {
+        title: "Thủ lĩnh thẻ bài",
+        genre: "",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    },
+    {
+        title: "One Punch Man",
+        genre: "",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    },
+    {
+        title: "Cô dâu đen",
+        genre: "",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    },
+    {
+        title: "Quỷ Cưa",
+        genre: "",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    },
+    {
+        title: "Zoo",
+        genre: "",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    },
+    {
+        title: "Tạm biệt Eri",
+        genre: "",
+        shortDescription: "One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc",
+        content: "Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa. Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece, kho báu vĩ đại nhất trên thế giới. Trong One Piece, mỗi nhân vật trong đều mang một nét cá tính đặc sắc kết hợp cùng các tình huống kịch tính, lối dẫn truyện hấp dẫn chứa đầy các bước ngoặt bất ngờ và cũng vô cùng hài hước đã biến One Piece trở thành một trong những bộ truyện nổi tiếng nhất không thể bỏ qua. Hãy đọc One Piece để hòa mình vào một thế giới của những hải tặc rộng lớn, đầy màu sắc, sống động và thú vị, cùng đắm chìm với những nhân vật yêu tự do, trên hành trình đi tìm ước mơ của mình."
+    }
+];
+
+
+
+        // Hàm lấy chỉ số từ URL
+        function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+$(document).ready(function() {
+    // Lấy chỉ số từ URL
+    const index = getQueryParam('index');
+    const storyDetail = $('#story_container');
+
+    // Hiển thị thông tin truyện
+    if (index !== null && stories[index]) {
+        const story = stories[index];
+        $('#story-title').text(story.title);
+        $('#story-genre').text(`Thể loại: ${story.genre}`);
+        $('#story-short-description').text(story.shortDescription);
+        $('#story-content').text(story.content);
+    } else {
+        storyDetail.html('<p>Không tìm thấy truyện.</p>');
+    }
+});
+    </script>
 </body>
 </html>
