@@ -59,6 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function hiendn(){
     const a = document.getElementById("dn");
     a.style.display="flex";
+    const b = document.getElementById("dk");
+    b.style.display="none"
     console.log("da bam")
 }
 document.addEventListener('DOMContentLoaded', function() {
@@ -78,6 +80,8 @@ function hiendn1(){
 function hiendk(){
     const a = document.getElementById("dk");
     a.style.display="flex";
+    const b = document.getElementById("dn");
+    b.style.display="none";
     console.log("da bam")
 }
 function hiendk1(){
